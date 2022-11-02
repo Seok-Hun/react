@@ -4,9 +4,10 @@ import './index.css';
 //import PassingCount from './PassingCount/PassingCount'
 import reportWebVitals from './reportWebVitals';
 import Specialization from './Specialization/Specialization'
+import App from './Fetch/App'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Specialization />
+    <App />
 );
 
 // If you want to start measuring performance in your app, pass a function
