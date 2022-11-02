@@ -38,10 +38,10 @@ app.get('/users',listUsers) //REST API 바인딩 (회원목록)
 app.post('/users',addUser)  //REST API 바인딩 (회원가입)
 
 //웹서버 가동
-app.listen(65010,()=>{
+app.listen(65020,()=>{
     console.log('---------------------------------')
     console.log('(리액트 연동용) 웹서버 실행중 ...')
-    console.log('접속주소:http://localhost:65010/')
+    console.log('접속주소:http://localhost:65020/')
     console.log('---------------------------------')
 })
 
