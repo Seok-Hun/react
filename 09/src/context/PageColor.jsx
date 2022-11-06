@@ -2,10 +2,11 @@ import React from "react";
 import { useContext,useState } from "react";
 import './PageColor.css'
 const ColorContext = React.createContext(null);
+//컨텍스트 객체생성
 
 function PageColor(){
   const [isDark, setIsDark] = useState(false)
-
+  //컨텍스트 제공
   return(
     <ColorContext.Provider value={{isDark,setIsDark}}>
       <Page/>
@@ -25,6 +26,7 @@ function Page(){
 
 function Header(){
   const {isDark} = useContext(ColorContext)
+  //isDark 컨텍스트 사용
   return(
     <header className="header"
     style={{
@@ -38,6 +40,7 @@ function Header(){
 
 function Content(){
   const {isDark} = useContext(ColorContext)
+  //isDark 컨텍스트 사용
   return(
     <content className='content'
     style={{
@@ -51,6 +54,7 @@ function Content(){
 
 function Footer(){
   const {isDark,setIsDark} = useContext(ColorContext)
+  //isDark,setIsDark() 컨텍스트 사용
   const toggleColor=()=>{setIsDark(!isDark)}
   return(
     <footer className="footer"

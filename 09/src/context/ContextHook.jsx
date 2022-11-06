@@ -2,8 +2,10 @@ import React from "react";
 import { useContext } from "react";
 
 const ThemeContext = React.createContext("light");
+//컨텍스트 객체생성
 
 function ContextApp2() {
+  //컨텍스트 제공
   return (
     <ThemeContext.Provider value="lavender">
       <Toolbar />
@@ -29,6 +31,7 @@ function ThemeButton() {
 
 function Button() {
   const value = useContext(ThemeContext);
+  //컨텍스트 구독요청
   return (
     <div
       style={{
