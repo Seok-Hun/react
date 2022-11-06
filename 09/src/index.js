@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import PassingCount from './PassingCount/PassingCount'
 import reportWebVitals from './reportWebVitals';
-import Specialization from './Specialization/Specialization'
-import FirstRouter from './reactrouter/FirstRouter';
-import App from './Fetch/App'
+//import Specialization from './Specialization/Specialization'
+//import FirstRouter from './reactrouter/FirstRouter';
+//import SecondRouter from './reactrouter2/SecondRouter';
+//import ContextApp from './context/ContextHook';
+import PageColor from './context/PageColor'
+//import App from './Fetch/App'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <FirstRouter />
+    <PageColor />
 );
 
 // If you want to start measuring performance in your app, pass a function
