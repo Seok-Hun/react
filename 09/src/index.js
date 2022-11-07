@@ -7,11 +7,13 @@ import reportWebVitals from './reportWebVitals';
 //import FirstRouter from './reactrouter/FirstRouter';
 //import SecondRouter from './reactrouter2/SecondRouter';
 //import ContextApp from './context/ContextHook';
-import PageColor from './context/PageColor'
+//import PageColor from './context/PageColor'
 //import App from './Fetch/App'
+import Blocks from './styling/Blocks';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <PageColor />
+    <Blocks />
 );
 
 // If you want to start measuring performance in your app, pass a function
